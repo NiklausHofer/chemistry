@@ -1,0 +1,75 @@
+\documentclass[11pt,paper=a4,final]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}           %allows us to specify the 'seitenrand'
+\usepackage{graphicx}           %package used to include graphics
+\usepackage{hyperref}           %used to make klickable links
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage[figuresright]{rotating}
+\usepackage{nameref}
+\usepackage{longtable}
+\usepackage{enumitem}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \setlength{\parskip}{0pt}
+% \setlength{\baselineskip}{0pt}
+\parindent 0pt 
+\parskip 11pt
+\parsep 0pt 
+\itemsep 0pt 
+\topsep 0pt 
+
+\geometry{a4paper, top=20mm, right=20mm, bottom=20mm, left=20mm}
+
+%defining header and footer
+\fancyhf{}      %delete default values
+\setlength{\headwidth}{\textwidth}      %header and footer width equal the text width
+%\fancyhead[LE,LO]{\includegraphics[scale=0.6]{header.png}}
+\fancyhead[LE,LO]{Niklaus Hofer, Roland Rytz}
+\fancyhead[RE,RO]{Versuchsprotokoll, Chemie, Versuch 1}
+\fancyfoot[CE,CO]{Speicherdatum: \today{}}
+\fancyfoot[RE,RO]{\thepage}
+
+%New page for every section
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+\title{Versuchsprotokoll, Versuch 1}
+\subtitle{Zuckergehalt von Fl\"ussigkeiten Bestimmen}
+\author{Niklaus Hofer, Roland Rytz}
+\date{\today{}}
+
+\begin{document}
+\maketitle
+\newpage
+\section{Messwerte, Beobachtungen}
+\subsection{Messwerte}                                                
+Gemessen wurde das Gewicht von 5ml der Fl\"ussigkeit. Es ist davon auszugehen, dass im Getr\"ank gel\"oste Kohles\"aure die Dichte der Fl\"ussigkeit geringer erscheinen l\"asst und so das Ergebnis verf\"alscht. Um diesen Faktor zu minimieren, hat Roland den Kohles\"auregehalt der Getr\"anke vor der Messung durch heftiges Sch\"utteln verringert. Es muss dennoch davon ausgegangen werden, dass noch gen\"ugend Kohlens\"aure in der Fl\"ussigkeit enthalten ist, um das Ergebnis in unbekanntem Masse zu beeinflussen.\\
+
+Die Fl\"ussigkeit wurde mit einer Vollpipette dosiert. Die Pipette war auf 5ml eingestellt.\\
+Genauigkeit: \(\pm0.6\% = \pm0.03ml\)\newline
+Die Masse der Fl\"ussigkeit haben wir mit Hilfe einer Waage (Mettler Toledo B303-S) ermittelt.\\
+Linearit\"at \( = \pm0.002g\), Ablesbarkeit \( = \pm0.001g\)\\
+Die Temperatur im Schulzimmer war sch\"atzungsweise \(20^\circ C \pm 3^\circ C\)
+
+\subsubsection{Rivella\textsuperscript{\textregistered}}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\bf Resultate & \bf Messung 1 & \bf Messung 2 & \bf Messung 3 & \bf Messung 4 \\ \hline
+Volument[ml] & 5ml & 5ml\footnote{Bei der zweiten Messung wurde ein klein wenig Fl\"ussigkeit zwischend der Aufnahmen und Abgabe verloren.} & 5ml & 5ml \\ \hline
+Masse[g]     & 5.172 & 5.135 & 5.138 & 5.165 \\ \hline
+\end{tabular}
+
+
+\newpage
+\end{document}
