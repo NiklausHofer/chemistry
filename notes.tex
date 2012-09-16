@@ -1,0 +1,67 @@
+\documentclass[11pt,paper=a4,final]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}           %allows us to specify the 'seitenrand'
+\usepackage{graphicx}           %package used to include graphics
+\usepackage{hyperref}           %used to make klickable links
+\usepackage{listings}
+%\usepackage{tabularx}
+%\usepackage{pdflscape}
+\usepackage[figuresright]{rotating}
+\usepackage{nameref}
+\usepackage{longtable}
+\usepackage{enumitem}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \setlength{\parskip}{0pt}
+% \setlength{\baselineskip}{0pt}
+%\parindent 0pt 
+%\parskip 11pt
+%\parsep 0pt 
+%\itemsep 0pt 
+%\topsep 0pt 
+
+\geometry{a4paper, top=20mm, right=20mm, bottom=20mm, left=20mm}
+
+%defining header and footer
+\fancyhf{}      %delete default values
+\setlength{\headwidth}{\textwidth}      %header and footer width equal the text width
+%\fancyhead[LE,LO]{\includegraphics[scale=0.6]{header.png}}
+\fancyhead[LE,LO]{Niklaus Hofer}
+\fancyhead[RE,RO]{Notizen zum Chemiebuch}
+\fancyfoot[CE,CO]{Speicherdatum: \today{}}
+\fancyfoot[RE,RO]{\thepage}
+
+%New page for every section
+%\let\stdsection\section
+%\renewcommand\section{\newpage\stdsection}
+
+\title{Notizen zum Chemiebuch}
+\author{Niklaus Hofer}
+\date{\today{}}
+
+\begin{document}
+\maketitle
+% No new page after the title for this one
+
+\begin{itemize}
+  \item Beispiele von Mischungen: Seite 12, unten
+  \item Zusammensetzung der Luft: Seite 13, oben
+  \item reine Stoffe und Verbindungen: Seite 14/15
+  \item Beschreibung der Agregatszust\"ande: Seite 16, unten
+  \item Erkl\"arung des Aufbaus des Periodensystems: Seite 18, oben
+\end{itemize}
+
+Bei den reinen Stoffen wird unterschieden zwischen Verbindungen und elementaren Stoffen. Verbindungen, wie Wasser, lassen sich durch die Analyse zerlegen. elementare Stoffe hingegen, k\"onnen nicht weiter zerlegt werden. Der Prozess des Zusammensetzens von elementaren Stoffen zu Verbindungen wird Synthese genannt. 
+
+Der direkte \"Ubergang vom festen in den gasf\"ormigen Zustand wird "sublimieren" genannt.
+
+\end{document}
