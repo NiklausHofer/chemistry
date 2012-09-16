@@ -1,0 +1,102 @@
+\documentclass[11pt,paper=a4,final]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}           %allows us to specify the 'seitenrand'
+\usepackage{graphicx}           %package used to include graphics
+\usepackage{hyperref}           %used to make klickable links
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage[figuresright]{rotating}
+\usepackage{nameref}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{footnote}
+% Make the document German
+\usepackage{ngerman}
+% allow rowspan
+\usepackage{multirow}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \setlength{\parskip}{0pt}
+% \setlength{\baselineskip}{0pt}
+%\parindent 0pt 
+%\parskip 11pt
+%\parsep 0pt 
+%\itemsep 0pt 
+%\topsep 0pt 
+
+\geometry{a4paper, top=20mm, right=20mm, bottom=20mm, left=20mm}
+
+%defining header and footer
+\fancyhf{}      %delete default values
+\setlength{\headwidth}{\textwidth}      %header and footer width equal the text width
+%\fancyhead[LE,LO]{\includegraphics[scale=0.6]{header.png}}
+\fancyhead[LE,LO]{Roland Peka Rytz, Niklaus Manuel Hofer}
+\fancyhead[RE,RO]{Chromatographie}
+\fancyfoot[CE,CO]{Speicherdatum: \today{}}
+\fancyfoot[RE,RO]{\thepage}
+
+%New page for every section
+%\let\stdsection\section
+%\renewcommand\section{\newpage\stdsection}
+
+\title{Chromatographie}
+\author{Roland Peka Rytz, Niklaus Manuel Hofer}
+\date{\today{}}
+
+\begin{document}
+\maketitle
+
+\section{Messwerte, Beobachtungen}
+\subsection{Messwerte}
+Genauigkeit der Chromatographie-Plaaten: unbekannt\\
+Genauigkeit der Messung (siehe unten): \( \pm 0.3cm\) \\
+Ungenauigkeit beim Vermessen der L\"osungsmittel-Front: vernachl\"assigbar \\
+Die Temepratur im Arbeitszimmer betrug: \(20^\circ C \pm 3^\circ C\)
+
+\begin{savenotes} %Handles footnotes within tables
+  \begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+      \hline
+      \bf Farbe Nr.	& \bf Teilfarbex	& \bf L\"osungsmittel-Front	& \bf Distanz		& \bf Rf		\\ \hline
+       1 (hellblau)	& hellblau		& \multirow{6}{*}{6.1 cm }
+										& 4.0 cm \(\pm 3 mm \)	& 0.607 - 0.705		\\ \cline{1-2} \cline{4-5}
+      2 (dunkelgr\"un)	& dunkelgr\"un		&				& 5.8 cm \(\pm 3 mm \)	& 0.902 - 1.000		\\ \cline{1-2} \cline{4-5}
+      \multirow{2}{*}{3 (rot) }
+			& pink			&				& 4.6 cm \(\pm 3 mm \)	& 0.705 - 0.803		\\ 
+			& orange		&				& 6.1 cm 		& 1.00 (nicht definiert)\\ \cline{1-2} \cline{4-5}
+      \multirow{2}{*}{4 (hellgr\"un) }
+ 			& hellblau		&				& 3.3 cm \(\pm 3 mm \)	& 0.500 - 0.600		\\
+			& gelb			&				& 6.1 cm		& 1.00 (nicht definiert)\\ \hline
+      5 (gelb)		& orange/dunkelgebl	& \multirow{6}{*}{6.1 cm }
+										& 6.1 cm		& 1.00 (nicht definiert)\\ \cline{1-2} \cline{4-5}
+      \multirow{4}{*}{6 (braun)}
+			& Violett		&				& 0.7 cm \(\pm 3 mm \)	& 0.066 - 0.164		\\
+			& hellblau		&				& 2.7 cm \(\pm 3 mm \)	& 0.393 - 0.492		\\
+      			& pink			&				& 3.9 cm \(\pm 3 mm \)	& 0.590 - 0.689		\\
+      			& Orange		&				& 6.1 cm 		& 1.00 (nicht definiert)\\ \cline{1-2} \cline{4-5}
+      \multirow{2}{*}{7 (schwarz}
+      			& gelb			&				& 4.0 cm \(\pm 6 mm \)	& 0.557 - 0.754		\\
+      			& schwarz		&				& 6.1 cm		& 1.00 (nicht definiert)\\ \cline{1-2} \cline{4-5}
+      	
+    \end{tabular}
+    \caption{Rf-Werte}
+    \end{table}
+\end{savenotes}
+
+\section{Fehlerabsch\"atzung}
+\begin{itemize}
+  \item Die Genauigkeit der Chromatographie-Platten ist leider unbekannt.
+  \item Die Messung der \( R_X \) Werte ist aber ohnehin nicht besonders genau. Auch, da nicht genau klar ist wo diese gemessen werden. Einige Farbklekse laufen nach oben langsam aus.
+\end{itemize}
+\end{document}
