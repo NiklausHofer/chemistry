@@ -1,0 +1,34 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: zuckergehalt.aux
+The style file: pccp.bst
+"<" can't start a style-file command---line 2 of file pccp.bst
+ : 
+ : <!-- saved from url=(0069)http://ctan.mackichan.com/biblio/bibtex/contrib/chem-journal/pccp.bst -->
+(Error may have been on previous line)
+&gt; is an unknown function---line 243 of file pccp.bst
+&gt; is an unknown function---line 245 of file pccp.bst
+&gt; is an unknown function---line 246 of file pccp.bst
+&gt; is an unknown function---line 248 of file pccp.bst
+&gt; is an unknown function---line 279 of file pccp.bst
+&lt; is an unknown function---line 349 of file pccp.bst
+&gt; is an unknown function---line 557 of file pccp.bst
+&lt; is an unknown function---line 559 of file pccp.bst
+Database file #1: zuckergehalt.bib
+&gt; is an unknown function---line 960 of file pccp.bst
+ptr=1, stack=
+500
+---the literal stack isn't empty for entry toepel
+while executing---line 970 of file pccp.bst
+ptr=1, stack=
+500
+---the literal stack isn't empty for entry eichtabelle
+while executing---line 970 of file pccp.bst
+1 is an integer literal, not a string, for entry toepel
+while executing---line 984 of file pccp.bst
+Warning--there's no year in eichtabelle
+You can't pop an empty literal stack for entry eichtabelle
+while executing---line 984 of file pccp.bst
+"<" can't start a style-file command---line 992 of file pccp.bst
+ : 
+ : </pre></body></html>
+(Error may have been on previous line)
+(There were 15 error messages)

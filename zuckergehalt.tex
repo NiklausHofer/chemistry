@@ -17,9 +17,9 @@
 \usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
 \usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
 \usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
-\usepackage{ifthen}
 \usepackage{ngerman}
 \usepackage[utf8]{inputenc}
+\usepackage{url}
 
 
 \usepackage{abstract}
@@ -28,6 +28,7 @@
 
 \usepackage{titlesec}
 \titleformat{\section}[block]{\large\scshape\centering{\Roman{section}.}}{}{1em}{} % Change the look of the section titles 
+\titleformat{\subsection}[block]{\vspace{-2mm}\centering{\Roman{section}.\scshape\roman{subsection}}}{}{1em}{} % Change the look of the subsection titles 
 
 \usepackage{lastpage}
 
@@ -35,8 +36,9 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[R]{Versuchsprotokoll Zuckergehalt}
-\fancyfoot[C]{\ifthenelse{\thepage=1}{}{ \thepage{} von \pageref{LastPage} }}
+\fancyhead[L]{Niklaus \textsc{Hofer} \\ Roland \textsc{Rytz}}
+\fancyhead[R]{Versuchsprotokoll \\ Zuckergehalt}
+\fancyfoot[C]{ \thepage{} von \pageref{LastPage} }
 
 \hypersetup{
     colorlinks,
@@ -45,6 +47,9 @@
     linkcolor=black,
     urlcolor=black
 }
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
@@ -95,17 +100,209 @@ Bericht gespeichert am \today}
 
 \section{Vorgehensweise}
 \lettrine[findent=0.25em,nindent=-0em,slope=0mm,lines=2]{D}  a Zucker eine höhere Dichte aufweist als Wasser und Süssgetränke überwiegend aus Wasser und Zucker bestehen, kann aus der Dichte des Getränks dessen ungefährer Zuckergehalt abgeleitet werden. Um die Dichte zu messen wurde die Flüssigkeit zuerst kräftig geschüttelt, da in den Getränken gelöste Kohlensäure die Resultate vermutlich verfälschen würde. Danach wurde mit einer Vollpipette eine Menge von 5ml abgemessen und in einem Glasgefäss gewogen. Jede Flüssigkeit wurde mindestens drei mal abgemessen und gewogen, um Ungenauigkeiten beim Abmessen mit der Vollpipette auszugleichen.\\
-Nebst der Dichte wurde auch der Brechungsindex bestimmt. Dazu wurden von der bereits geschüttelten Flüssigkeit einige Tropfen auf das Glas eines Handrefraktometers gegeben und das Gerät wurde fokussiert.
+Nebst der Dichte wurde auch der Brechungsindex bestimmt, woraus ebenfalls auf den Zuckergehalt geschlossen werden kann. Dazu wurden von der bereits geschüttelten Flüssigkeit einige Tropfen auf das Glas eines Handrefraktometers gegeben. Danach wurde die Klappe geschlossen und das Gerät fokussiert.
+
+%------------------------------------------------
+
+\section{Messwerte, Beobachtungen}
+
+\subsection{Messwerte}
+
+%------------------- Red Bull
+
+\begin{table}[H]
+\caption{Bestimmung der Masse bei Red Bull\superscript{\textregistered}}
+\centering
+\begin{tabular}{lrr}
+\toprule
+Messung & Volumen \([ml]\) & Masse \([g]\)\\
+\midrule
+Messung 1 & \(5ml\) & \(5.210g\) \\
+Messung 2 & \(5ml\) & \(5.243g\) \\
+Messung 3 & \(5ml\) & \(5.225g\) \\
+Messung 4 & \(5ml\) & \(5.233g\) \\
+\midrule
+$\bar{x}_{Messungen}$ & \(5ml\) & \(5.228g \pm 0.32\%\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Bestimmung des Brechungsindex bei Red Bull\superscript{\textregistered}}
+\centering
+\begin{tabular}{lr}
+\toprule
+Messung & Brechungsindex \\
+\midrule
+Messung 1 & \(1.349\) \\
+Messung 2 & \(1.349\) \\
+Messung 3 & \(1.349\) \\
+\midrule
+$\bar{x}_{Messungen}$ & \(1.349\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%------------------- Apfelschorle
+
+\begin{table}[H]
+\caption{Bestimmung der Masse bei Apfelschorle}
+\centering
+\begin{tabular}{lrr}
+\toprule
+Messung & Volumen \([ml]\) & Masse \([g]\)\\
+\midrule
+Messung 1 & \(5ml\) & \(5.140g\) \\
+Messung 2 & \(5ml\) & \(5.119g\) \\
+Messung 3 & \(5ml\) & \(5.141g\) \\
+Messung 4 & \(5ml\) & \(5.137g\) \\
+\midrule
+$\bar{x}_{Messungen}$ & \(5ml\) & \(5.134g \pm 0.21\%\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Bestimmung des Brechungsindex bei Apfelschorle}
+\centering
+\begin{tabular}{lr}
+\toprule
+Messung & Brechungsindex \\
+\midrule
+Messung 1 & \(1.343\) \\
+Messung 2 & \(1.343\) \\
+Messung 3 & \(1.343\) \\
+\midrule
+$\bar{x}_{Messungen}$ & \(1.343\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%------------------- Rivella
+
+\begin{table}[H]
+\caption{Bestimmung der Masse bei Rivella\superscript{\textregistered}}
+\centering
+\begin{tabular}{lrr}
+\toprule
+Messung & Volumen \([ml]\) & Masse \([g]\)\\
+\midrule
+Messung 1 & \(5ml\) & \(5.172g\) \\
+Messung 2 & \(5ml\) & \(5.135g\) \\
+Messung 3 & \(5ml\) & \(5.138g\) \\
+Messung 4 & \(5ml\) & \(5.165g\) \\
+\midrule
+$\bar{x}_{Messungen}$ & \(5ml\) & \(5.153g \pm 0.36\%\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Bestimmung des Brechungsindex bei Rivella\superscript{\textregistered}}
+\centering
+\begin{tabular}{lr}
+\toprule
+Messung & Brechungsindex \\
+\midrule
+Messung 1 & \(1.465\) \\
+Messung 2 & \(1.465\) \\
+Messung 3 & \(1.465\) \\
+\midrule
+$\bar{x}_{Messungen}$ & \(1.465\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%------------------- Testlösung
+
+\begin{table}[H]
+\caption{Bestimmung der Masse bei Testlösung A}
+\centering
+\begin{tabular}{lrr}
+\toprule
+Messung & Volumen \([ml]\) & Masse \([g]\)\\
+\midrule
+Messung 1 & \(5ml\) & \(5.400g\) \\
+Messung 2 & \(5ml\) & \(5.438g\) \\
+Messung 3 & \(5ml\) & \(5.389g\) \\
+\midrule
+$\bar{x}_{Messungen}$ & \(5ml\) & \(5.134g \pm 0.21\%\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Bestimmung des Brechungsindex bei Testlösung A}
+\centering
+\begin{tabular}{lr}
+\toprule
+Messung & Brechungsindex \\
+\midrule
+Messung 1 & \(1.367\) \\
+Messung 2 & \(1.367\) \\
+Messung 3 & \(1.367\) \\
+\midrule
+$\bar{x}_{Messungen}$ & \(1.367\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{5mm}
+
+\subsection{Beobachtungen}
+
+Die Getränke wirkten schon leicht abgestanden, Red Bull\superscript{\textregistered} hatte bereits einen faulen Geruch. Wie sich dies auf den Zuckergehalt auswirkt ist uns nicht bekannt.
 
 %------------------------------------------------
 
 \section{Berechnungen, Resultate}
 
-Formel für die Dichte der Flüssigkeit:
-\[sup\]
+Formel für die Dichte der Flüssigkeit (\(m\) betrug im Versuch stets \(5ml\)):
+\[
+	\rho = \frac{m}{V}
+\]
+\\
+Formel für den Zuckergehalt der Flüssigkeit:
+\[
+	Zuckergehalt = \frac{(\rho-1)g}{cm^3}
+\]
+\\
 
 \begin{table}[H]
-\caption{Rivella$\textsuperscript{\textregistered}$}
+\caption{Zuchergehalt nach Brechungsindex\superscript{\cite{eichtabelle}}}
+\centering
+\begin{tabular}{rr}
+\toprule
+\bfseries Brechungsindex & Zuckergehalt \\
+\midrule
+1.333	&	0\%		\\
+1.3359	&	2\%		\\
+1.3388	&	4\%		\\
+1.3418	&	6\%		\\
+1.3448	&	8\%		\\
+1.3478	&	10\%	\\
+1.3509	&	12\%	\\
+1.3541	&	14\%	\\
+1.3573	&	16\%	\\
+1.3606	&	18\%	\\
+1.3639	&	20\%	\\
+1.3706	&	24\%	\\
+1.3812	&	30\%	\\
+1.3922	&	36\%	\\
+1.4038	&	42\%	\\
+1.4159	&	48\%	\\
+1.433	&	56\%	\\
+1.4511	&	64\%	\\
+1.4654	&	70\%  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Rivella\superscript{\textregistered} besteht laut Herstellerangabe zu 35\% aus Milchserum, was eine Dichte von \(\approx 1.034\frac{g}{cm^3}\) aufweist. \superscript{\cite{toepel}}
+
+\begin{table}[H]
+\caption{Rivella\superscript{\textregistered}}
 \centering
 \begin{tabular}{lrrr}
 \toprule
@@ -127,26 +324,19 @@ $\bar{x}_{Refraktometer}$ & & $0$ & $7.5 \pm 6\%$ \\
 \bottomrule
 $\bar{x}_{Messwerte}$ & & & $6.4 \pm 7\%$ \\
 \bottomrule
+Herstellerangabe & & & $6.4g$ \\
+\bottomrule
 \end{tabular}
 \end{table}
 
-\lipsum[5] % Dummy text
-
-\begin{equation}
-\label{eq:emc}
-e = mc^2
-\end{equation}
-
-\lipsum[6] % Dummy text
-
-%------------------------------------------------
-
-\section{Discussion}
-
-\lipsum[7-8] % Dummy text
-
 %----------------------------------------------------------------------------------------
 
-%\end{multicols}
+\section{Bibliographie}
+
+{\def\section*#1{}
+	\bibliographystyle{pccp}
+	\bibliography{zuckergehalt}
+	\nocite{*}
+}
 
 \end{document}
