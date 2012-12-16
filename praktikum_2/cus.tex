@@ -18,6 +18,7 @@
 \usepackage{mdwlist}
 \usepackage{textcomp}
 \usepackage{multirow}
+\usepackage{amsmath}
 
 \hypersetup{
     colorlinks,
@@ -53,6 +54,7 @@
 \maketitle
 \newpage
 \tableofcontents
+\part{Experiment}
 \section{Messwerte, Beobachtungen}
 \subsection{Messwerte}
 Die Werte wurden mit einer Mettler Toledo B303-S ermittelt.\\
@@ -92,13 +94,13 @@ bemerkt haben, sollte das keine Rolle spielen.
 Beim Erhitzen des Schwefels ist dieses braun und fl\"ussig geworden.
 Anschliessen ist ein hellgelber Dampf aufgestiegen. Dieser ist im Reagenzglas
 langsam gestiegen. Wenn dann das Kupfer erhitzt wurde, so hat sich dieses erst
-schwarz verf\"arbt. In einigen F\"allen, ist das sehr schlagartig von Statten
-gegangen. Nach weiteren Erhitzen ist ein Glutstreiffen von unten nach
+schwarz verf\"arbt. In einigen F\"allen ist das sehr schlagartig von Statten
+gegangen. Nach weiterem Erhitzen ist ein Glutstreiffen von unten nach
 Oben \"uber das Kupfer gewandert. Es hat ausgesehen als sei etwas verbrannt.
 Zur\"uck geblieben ist das Kupfersulvid, eine sehr spr\"ode, graue Masse.
 
 Beim weiteren Erhitzen des Produktes in einem sauberen Reagenzglas, sind
-weitere R\"uckst\"ande verdampft und das Werkst\"uck so ges\"aubert. Seine
+weitere R\"uckst\"ande verdampft und das Werkst\"uck so ges\"aubert worden. Seine
 dunkelgraue Farbe war nun besser sichtbar.
 \section{Berechnungen}
 \begin{table}[h!]
@@ -116,8 +118,8 @@ dunkelgraue Farbe war nun besser sichtbar.
 \end{table}
 
 Es ist davon auszugehen, dass nach der Reaktion noch alle Kupferatome vorhanden
-(wenn auch in ver\"anderter form) sind. Dies gilb aber nat\"urlich nicht f\"ur
-das Schwefel, von dem ein Grossteil verloren gegangen ist. Folglich l\"asst sich
+(wenn auch in ver\"anderter form) sind. Dies gilt aber nat\"urlich nicht f\"ur
+den Schwefel, von dem ein Grossteil verloren gegangen ist. Folglich l\"asst sich
 die Menge Schwefel im Kupfersulvid berechnen aus der Masse des Kupfersulvides
 weniger der Masse des Kupfers.
 \begin{table}[h!]
@@ -175,13 +177,13 @@ Auf Grund der starken Abweichung der Werte beim ersten Versuch, werden wir
 diesen Wert von nun an ausser Acht lassen.
 
 Wir berechnen nun noch den durchschnittlichen Wert:\\
-\[  \frac{1.75513 + 2.13817}{2} = 1.94665 \]\\
-\[  \frac{1.86074 + 2.05998}{2} = 1.96036 \]\\
-\[  \frac{1.7332 + 2.03274}{2} = 1.88297 \]\\
+\[  \frac{1.75513 + 2.13817}{2} = 1.94665 \]
+\[  \frac{1.86074 + 2.05998}{2} = 1.96036 \]
+\[  \frac{1.7332 + 2.03274}{2} = 1.88297 \]
 \[  \frac{1.94665 + 1.96036 + 1.88297}{3} \approx 1.93 \]
 
 Das Ver\"altnis von Kupfer zu Schwefel betr\"agt also nahezu 2. Da 2 auch dem
-Literaturwert entspricht, ist die Verh\"altnisformel:
+Literaturwert \cite{ifa:cs1} entspricht, ist die Verh\"altnisformel:
 \[ Cu_2S \]
 
 Die Reaktionsgleichung sieht dann wie folgt aus:
@@ -195,7 +197,7 @@ Genauigkeit des ersten Kupfersulfidstreifens durch Fallenlassen: \(\pm 10\% \)
 Diese Werte wurden bei den Berechnungen oben bereits ber\"ucksichtigt.
 \subsection{Berechnung der Arbeitsungenauigkeit}
 Es ist offensichtlich, dass die erste Messung durch das Fallenlassen und das
-Verlieren eines St\"uckes des Produktes enorm an Genauigkeit verloren hat.
+Verlieren eines St\"uckes des Produktes erheblich an Genauigkeit verloren hat.
 Eigentlich h\"atte dieser Versuch als ung\"ultig erkl\"art und wiederholt werden
 m\"ussen. Dieser Wert wird deshalt hier nicht ber\"ucksichtigt.
 
@@ -227,10 +229,10 @@ m\"ussen. Dieser Wert wird deshalt hier nicht ber\"ucksichtigt.
 \end{table}
 \section{Interpretation}
 Wie oben beschrieben, haben wir zwei visuelle Ver\"anderungen am Kupfer bemerkt.
-Bei der ersten wurde lediglich die Oberfl\"ache des Metalles schwar.  Wir gehen
+Bei der ersten wurde lediglich die Oberfl\"ache des Metalles schwarz.  Wir gehen
 davon aus, dass sich in diesem Schritt bereits Eisensulvid gebildet hat indem
 sich die \"ausserste Schicht des Kupfers mit dem gasf\"ormigen Schwefel
-verbunden hat, noch nicht aber der Rest des Kupers. Die \"ausserste Schicht des
+verbunden hat, noch nicht aber der Rest des Kupfers. Die \"ausserste Schicht des
 Kupfers hat also deutlich weniger Aktivierungsenergie ben\"otigt um sich mit dem
 Schwefel zu verbinden. Das liegt m\"oglicherweise an der grossen Oberfl\"ache.
 
@@ -240,9 +242,67 @@ den Glutstreiffen, der \"uber das Kupfer gewandert ist. Daraus l\"asst sich
 schliessen, dass es sich bei der Reaktion von Kupfer und Schwefel zu
 Kupfersulvid um eine exotherme Reaktion handelt.
 
+Wie aus den Berechnungen und dem Literaturwert hervorgeht, verbinden sich
+jeweils zwei Kupferatome mit einem Schwefelatom.
+\part{Theoretische Aufgaben}
+\section{Kupfersulfid-Variationen}
+Es gibt zwei verschiedene Kupfer- Schwefel-Verbindungen\cite{wiki:cs}.
+Neben dem von uns bestimmten \(Cu_2S\) gibt es auch noch \(CuS\)\cite{ifa:cs2}.
+\subsection{Vergleich der Werte}
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|l|l|l|l|l|}\hline
+    \bf Name & \bf Formel & \bf genau &\bf Farbe & \bf Festigkeit & \bf Mol\\ \hline
+    Kupfer(I)-sulfid & \(Cu_2S\) & \( (Cu^+)_2 S^{2-} \) & dunkelgrau & spr\"ode & 159.61 g/mol\\ \hline
+    Kupfer(II)-sulfid & \(CuS\) & \( Cu^{2+} S^{2-}\) & schwarz & spr\"ode & 95.61 g/mol\\ \hline
+  \end{tabular}
+  \caption{Vergleich verschiedener Kupfersulfide}
+\end{table}
+
+In unserem Versuch haben wir stets \(Cu_2S\) erhalten. Das wird wohl daran
+liegen, dass die Herstellung von \(CuS\) komplizierter ist. Wir haben ausserdem
+nicht genau ein Verh\"altnis von 2 erhalten, sondern einen Wert leicht unterhalt
+(1.93). Dies entspricht nur ca. 1.5\%, ist aber trotzdem interessant, da der
+Wert in allen drei Versuchen tendenziell eher unter zwei lag. Dass das
+Verh\"altnis von Kupfer zu Schwefel niedriger ist bedeutet, dass mehr Schwefel
+vorhanden sein musste. Das k\"onnte zum Biespiel daran gelegen haben, dass das
+Werkst\"uck nicht perfekt gereinigt war und noch Schwefelr\"uckst\"ande
+festgeklebt sind.
+\subsection{Vergleich des Aussehens}
+Eine weitere Frage ist die nach dem Aussehen. Kupfer(I)-sulfid wird als \glqq blau bis
+grauschwarz, gl\"andend\grqq beschrieben \cite{ifa:cs1}. Unsere Ergebnisse waren
+stets dunkelgrau und ganz und gar nicht gl\"anzend, sondern matt. Auch das
+l\"asst sich wohl durch die Verunreinigung erkl\"aren.
+\section{Aufgabe}
+Molybd\"an: 4.29g\\
+Molybd\"anfluorid: 9.389g \\
+Fluor: \( 9.389g - 4.29g = 5.099g \)\\
+Molybd\"an: 95.94 g/mol\\
+Fluor: 18.998 g/mol
+
+\[ \frac{4.29g}{95.94\frac{g}{mol}} = 0.044715 mol \text{ Molybd\"an} \]
+\[ \frac{5.099g}{18.998\frac{g}{mol}} = 0.268397 mol \text{ Fluor} \]
+\[ \frac{0.268397 mol \text{ Fluor}}{0.044715 mol \text{ Molybd\"an}} = 6.00233
+\frac{\text{Fluor}}{\text{Molybd\"an}} \]
+Folglich kommen auf jedes Molybd\"an Atom sechs Fluor Atome. Die
+Verh\"altnisformel ist demzufolge:
+\[ MoF_6 \]
+Die Reaktionsgleichung ist dann:
+\[ Mo + 6F \to MoF_6 \]
+\section{Unterzeichnet}
+Bern, 17. Dezember 2012
+
+\vspace{0.5cm}
+\noindent
+Niklaus Hofer\hfill Roland Rytz
+
+\vspace{2cm}
+\noindent
+\hrulefill \hfill \hrulefill
+
 \newpage
 \listoftables
-\bibliography{}{}
+\bibliography{cus.bib}{}
 \bibliographystyle{plain}
 \end{document}
 

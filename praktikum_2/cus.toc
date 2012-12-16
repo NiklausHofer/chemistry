@@ -1,8 +1,15 @@
+\contentsline {part}{\numberline {I}Experiment}{2}{part.1}
 \contentsline {section}{\numberline {1}Messwerte, Beobachtungen}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Messwerte}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Beobachtungen}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.2}Beobachtungen}{3}{subsection.1.2}
 \contentsline {section}{\numberline {2}Berechnungen}{3}{section.2}
-\contentsline {section}{\numberline {3}Fehlerabsch\"atzung}{4}{section.3}
+\contentsline {section}{\numberline {3}Fehlerabsch\"atzung}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Berechnung der Arbeitsungenauigkeit}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Berechnung der prozentualen Abweichung vom Literaturwert}{5}{subsection.3.2}
 \contentsline {section}{\numberline {4}Interpretation}{5}{section.4}
+\contentsline {part}{\numberline {II}Theoretische Aufgaben}{6}{part.2}
+\contentsline {section}{\numberline {5}Kupfersulfid-Variationen}{6}{section.5}
+\contentsline {subsection}{\numberline {5.1}Vergleich der Werte}{6}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Vergleich des Aussehens}{7}{subsection.5.2}
+\contentsline {section}{\numberline {6}Aufgabe}{7}{section.6}
+\contentsline {section}{\numberline {7}Unterzeichnet}{7}{section.7}
