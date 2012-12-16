@@ -1,0 +1,114 @@
+\documentclass[11pt,paper=a4,final]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}           %allows us to specify the 'seitenrand'
+\usepackage{graphicx}           %package used to include graphics
+\usepackage{hyperref}           %used to make klickable links
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage[figuresright]{rotating}
+\usepackage{nameref}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{ngerman} % Make the document German
+% Make the document German
+\usepackage{ngerman}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{mdwlist}
+\usepackage{textcomp}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+
+\title{Kupfersulfid herstellen}
+\author{Roland Rytz \and Niklaus Hofer}
+\date{\today{}}
+
+% Make title and author accessible in the header/footer
+\makeatletter
+  \let\Title\@title
+  \let\Author\@author
+\makeatother
+
+\pagestyle{fancy}
+
+%\geometry{a4paper, top=20mm, right=20mm, bottom=20mm, left=20mm}
+
+\fancyhf{}      %delete default values
+\setlength{\headwidth}{\textwidth}      %header and footer width equal the text width
+\lhead{\Author}
+\rhead{\Title}
+\fancyfoot[CE,CO]{Speicherdatum: \today{}}
+\fancyfoot[RE,RO]{\thepage}
+
+\begin{document}
+\maketitle
+\newpage
+\( 1mol Schwefel = 32.06g \)\\
+\( 0.03 \cdot 32.06g = 0.9618g \)
+\section{Messwerte, Beobachtungen}
+\subsection{Genauigkeitsabsch\"atzung}
+Die Werte wurden mit einer Mettler Toledo B303-S ermittelt.\\
+Genauigkeit der Wage: \(\pm 0.002g\)\\
+Der Kupfersulfidstreifen des ersten Versuches ist zu Boden gefallen. \\
+Genauigkeit des ersten Kupfersulfidstreifens durch Fallenlassen: \(\pm 10\% \)
+\subsection{Messwerte}
+{
+\begin{table}[h!]
+\centering
+  \begin{tabular}{|l|l|l|l|l|l|}
+    \hline
+    \bf Versuch			& \bf Ungenauigkeit	& \bf Nr. 1	& \bf Nr. 2	& \bf Nr. 3	& \bf Nr. 4	\\ \hline
+    Masse Schwefel (S) 		& \( \pm 0.002g \)	& 0.965g	&	0.960g & 0.965g & 1.097g \\ \hline
+    Masse Kupfer (Cu)		& \( \pm 0.002g \)	& 0.286g	&	0.176g & 0.345g & 0.215g \\ \hline
+    Masse Kupfersulfid (CuS)	& \( \pm 0.002g \)	& 0.302g \(+ ~ 10\% \)       & 	0.222g & 0.434g & 0.273g \\ \hline
+  \end{tabular}
+  \caption{Tabelle mit den Messwerten aus den vier Versuchen}
+  \label{tab:messwerte}
+\end{table}
+\subsection{Beobachtungen}
+Die ersten beiden Werkst\"ucke sind uns leider jeweils zu Boden gefallen. Das
+erste davon ist dabei zerbrochen. Zwar hat Niklaus, der es fallen gelassen hat,
+versucht, die Bruchst\"ucke wieder einzusammeln und auch zu w\"agen. Dabei ging
+aber mindestens eines der St\"ucke verloren. Dieses betr\"agt sch\"atzungsweise
+\( \frac{1}{12} \) der Masse.
+
+Das zweite St\"uck ist ebenfalls zu Boden gefallen. Nach unseren Beobachtungen
+ging dabei aber kein Material verloren.
+
+Beim w\"agen der letzten Ladung Schwefel, hatte Niklaus Probleme mit der Wage.
+Diese hat immer wieder andere Werte angezeigt. Wie sich herausgestellt hat, war
+die Wage nach dem S\"aubern nicht richtig zusammen gesetzt worden. Da die genaue
+Menge Schewefel aber nicht so wichtig ist und wir den Missstand rechtzeitig
+bemerkt haben, sollte das keine Rolle spielen.
+
+Beim Erhitzen des Schwefels ist dieses braun und fl\"ussig geworden.
+Anschliessen ist ein hellgelber Dampf aufgestiegen. Dieser ist im Reagenzglas
+langsam gestiegen. Wenn dann das Kupfer erhitzt wurde, so hat sich dieses erst
+schwarz verf\"arbt. In einigen F\"allen, ist das sehr schlagartig von Statten
+gegangen. Nach weiteren Erhitzen ist ein Glutstreiffen von unten nach
+Oben \"uber das Kupfer gewandert. Es hat ausgesehen als sei etwas verbrannt.
+Zur\"uck geblieben ist das Kupfersulvid, eine sehr spr\"ode, graue Masse.
+
+Beim weiteren Erhitzen des Produktes in einem sauberen Reagenzglas, sind
+weitere R\"uckst\"ande verdampft und das Werkst\"uck so ges\"aubert. Seine
+dunkelgraue Farbe war nun besser sichtbar.
+\subsection{Interpretation}
+Die eigentliche Reaktion der Edukte, Schwefel und Kupfer, zu Kupfersulvid hat
+wohl im Punkt des Verbrennens stattgefunden. ge\"aussert hat sich dies \"uber
+den Glutstreiffen, der \"uber das Kupfer gewandert ist.  Doch bereits vor diesem
+Schritt hat die oberste Schicht des Kupfers mit den Schwefeld\"ampfen reagiert.
+Dies manifestierte sich durch das schwarzwerden des Materials.
+\subsection{Beobachtungen}
+\section{Auswertung, Interpretation}
+\bibliography{}{}
+\bibliographystyle{plain}
+\end{document}
+
