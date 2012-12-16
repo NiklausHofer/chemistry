@@ -17,6 +17,7 @@
 \usepackage{lipsum}
 \usepackage{mdwlist}
 \usepackage{textcomp}
+\usepackage{multirow}
 
 \hypersetup{
     colorlinks,
@@ -58,7 +59,8 @@
 Die Werte wurden mit einer Mettler Toledo B303-S ermittelt.\\
 Genauigkeit der Wage: \(\pm 0.002g\)\\
 Der Kupfersulfidstreifen des ersten Versuches ist zu Boden gefallen. \\
-Genauigkeit des ersten Kupfersulfidstreifens durch Fallenlassen: \(\pm 10\% \)
+Genauigkeit des ersten Kupfersulfidstreifens durch Fallenlassen: \(\pm 10\% \)\\
+Die Temperatur im Schulzimmer betrug ca. 19\textdegree C
 \subsection{Messwerte}
 {
 \begin{table}[h!]
@@ -100,12 +102,84 @@ Zur\"uck geblieben ist das Kupfersulvid, eine sehr spr\"ode, graue Masse.
 Beim weiteren Erhitzen des Produktes in einem sauberen Reagenzglas, sind
 weitere R\"uckst\"ande verdampft und das Werkst\"uck so ges\"aubert. Seine
 dunkelgraue Farbe war nun besser sichtbar.
+\subsection{Berechnungen}
+\begin{table}[h!]
+  \begin{tabular}{|l|l|l|l|} \hline
+    \bf Versuch & \bf Gram Kuper & \bf 1 Mol Kupfer & \bf Mol Kupfer \\ \hline
+    1	& 0.284 - 0.288	& \multirow{4}{*}{63.546 g/mol}	& 0.004532 - 0.004469
+    mol \\ \cline{1-2} \cline{4-4}
+    2	& 0.174 - 0.178 & & 0.002738 - 0.002801 mol \\ \cline{1-2} \cline{4-4}
+    3 	& 0.343 - 0.347 & & 0.005398 - 0.005461 mol \\ \cline{1-2} \cline{4-4}
+    4	& 0.213 - 0.217 & & 0.003352 - 0.003415 mol \\ \hline
+  \end{tabular}
+  \caption{Berechnung der Kupferwerte}
+  \label{tab:kupfer}
+\end{table}
+
+Es ist davon auszugehen, dass nach der Reaktion noch alle Kupferatome vorhanden
+(wenn auch in ver\"anderter form) sind. Dies gilb aber nat\"urlich nicht f\"ur
+das Schwefel, von dem ein Grossteil verloren gegangen ist. Folglich l\"asst sich
+die Menge Schwefel im Kupfersulvid berechnen aus der Masse des Kupfersulvides
+weniger der Masse des Kupfers.
+\begin{table}[h!]
+  \begin{tabular}{|l|l|l|l|}\hline
+  \bf Versuch & \bf Masse Kupfersulfid & \bf Masse Kupfer & \bf Masse Schwefel
+  \\ \hline
+  1 & 0.300 - 0.3344 g	& 0.284 - 0.288 g	& 0.012 - 0.0504 g \\ \hline
+  2 & 0.220 - 0.224 g	& 0.174 - 0.178 g	& 0.042 - 0.05 g \\ \hline
+  3 & 0.432 - 0.436 g	& 0.343 - 0.347 g	& 0.085 - 0.093 g \\ \hline
+  4 & 0.271 - 0.275 g	& 0.213 - 0.217 g	& 0.054 - 0.062 g \\ \hline
+  \end{tabular}
+  \caption{Berechnung der Masse Schefel}
+  \label{tab:schwefel}
+\end{table}
+Nun l\"asst sich die Teilchenanzahl des Schwefels berechnen. Um die Zahlen klein
+und aussagekr\"aftig zu halten, verwenden wir auch hier die Einheit Mol.
+\begin{table}[h!]
+  \begin{tabular}{|l|l|l|l|}\hline
+    \bf Versuch & \bf Masse Schwefel & \bf 1 Mol Schwefel & \bf Schwefelteilchen
+    \\ \hline
+    1 & 0.012 - 0.0504 g & \multirow{4}{*}{32.06 g/mol} & 0.000374 - 0.001572
+    mol \\ \cline{1-2} \cline{4-4}
+    2 & 0.042 - 0.05 g & & 0.00131 - 0.0156 mol \\ \cline{1-2} \cline{4-4}
+    3 & 0.085 - 0.093 g & & 0.002651 - 0.002901 mol \\ \cline{1-2} \cline{4-4}
+    4 & 0.054 - 0.062 g & & 0.00168 - 0.001934 mol \\ \hline
+  \end{tabular}
+  \caption{Berechnung der Anzahl Schwefelteilchen}
+  \label{tab:schwefelteilchen}
+\end{table}
+Anhand der Berechneten Teilchenzahlen von Kupfer und Schwefel im Kupfersulfid
+l\"asst sich nun das Verh\"altnis berechnen.
+\begin{table}[h!]
+  \begin{tabular}{|l|l|l|l|} \hline
+    \bf Versuch & \bf Kupferteilchen & \bf Schwefelteilchen & \bf Verh\"altnis \\
+    \hline
+    1 & 0.004532 - 0.004469 mol & 0.000374 - 0.001572 mol & 2.88295 - 11.9492 \\
+    \hline
+    2 & 0.002738 - 0.002801 mol & 0.00131 - 0.0156 mol & 0.1755 - 2.13817 \\
+    \hline
+    3 & 0.005398 - 0.005461 mol & 0.002651 - 0.002901 mol & 1.86074 - 2.05998 \\
+    \hline
+    4 & 0.003352 - 0.003415 mol & 0.00168 - 0.001934 mol & 1.7332 - 2.03274 \\
+    \hline
+  \end{tabular}
+  \caption{Berechnung des Verh\"altnisses Kupfer zu Schefel}
+  \label{tab:verhaeltnis}
+\end{table}
 \subsection{Interpretation}
+Wie oben beschrieben, haben wir zwei visuelle Ver\"anderungen am Kupfer bemerkt.
+Bei der ersten wurde lediglich die Oberfl\"ache des Metalles schwar.  Wir gehen
+davon aus, dass sich in diesem Schritt bereits Eisensulvid gebildet hat indem
+sich die \"ausserste Schicht des Kupfers mit dem gasf\"ormigen Schwefel
+verbunden hat, noch nicht aber der Rest des Kupers. Die \"ausserste Schicht des
+Kupfers hat also deutlich weniger Aktivierungsenergie ben\"otigt um sich mit dem
+Schwefel zu verbinden. Das liegt m\"oglicherweise an der grossen Oberfl\"ache.
+
 Die eigentliche Reaktion der Edukte, Schwefel und Kupfer, zu Kupfersulvid hat
 wohl im Punkt des Verbrennens stattgefunden. ge\"aussert hat sich dies \"uber
-den Glutstreiffen, der \"uber das Kupfer gewandert ist.  Doch bereits vor diesem
-Schritt hat die oberste Schicht des Kupfers mit den Schwefeld\"ampfen reagiert.
-Dies manifestierte sich durch das schwarzwerden des Materials.
+den Glutstreiffen, der \"uber das Kupfer gewandert ist. Daraus l\"asst sich
+schliessen, dass es sich bei der Reaktion von Kupfer und Schwefel zu
+Kupfersulvid um eine exotherme Reaktion handelt.
 \subsection{Beobachtungen}
 \section{Auswertung, Interpretation}
 \bibliography{}{}
