@@ -10,6 +10,7 @@
 \usepackage{nameref}
 \usepackage{longtable}
 \usepackage{enumitem}
+\usepackage{mdwlist}
 
 \hypersetup{
     colorlinks,
@@ -49,10 +50,9 @@
 \date{\today{}}
 
 \begin{document}
-\maketitle
 % No new page after the title for this one
 
-\begin{itemize}
+\begin{itemize*}
   \item Merkmale von Reinen Stoffen und Gemischen: Seite 11, unten
   \item Beispiele von Mischungen: Seite 12, unten
   \item Zusammensetzung der Luft: Seite 13, oben
@@ -60,13 +60,13 @@
   \item Beschreibung der Agregatszust\"ande: Seite 16, unten
   \item Erkl\"arung des Aufbaus des Periodensystems: Seite 18, oben
   \item Trennmethoden: Seite 24 bis 30
-    \begin{itemize}
+    \begin{itemize*}
       \item Destillation: 25
       \item Chromatografie: 26
       \item Filtration, Adsorption, Extraktion: 28
       \item Sedimentieren, Zentrifugieren: 30
-    \end{itemize}
-\end{itemize}
+    \end{itemize*}
+\end{itemize*}
 
 Bei den reinen Stoffen wird unterschieden zwischen Verbindungen und elementaren
 Stoffen. Verbindungen, wie Wasser, lassen sich durch die Analyse zerlegen.
@@ -81,7 +81,7 @@ Das Gesetz der konstanten Proportionen beschreibt, dass jeweils dieselbe Menge
 verschiedener Stoffe zusammen reagieren. Seite 36 und 37. Hier finden sich auch
 Erlaeuterungen zu Stickstoff-Sauerstoff-Verbindungen.
 
-Gesetz der multiplen Proportionen: Seite 38
+%Gesetz der multiplen Proportionen: Seite 38
 
 Columbo-Gesetz zur elektrischen Ladung und Anziehung von Koerpern: Seite 39.
 Weiter auf Seite 39 wird in diesem Zusammenhang auch die Elementarladung
@@ -118,7 +118,7 @@ Die Masse in g eines Atoms laesst sich berechnen, indem die relative Atommasse
 mit \(1.661 \cdot 10^{-24} \) multipliziert wird.\\ Wie diese Werte zu berechnen
 sind, ist auf Seite 53 anhand eines Beispiels beschrieben.
 
-Aufbau des Atomkerns: Seite 66
+%Aufbau des Atomkerns: Seite 66
 
 Die maximale Elektronenzahl der Schalen eines Atomes wird mit der Formel \( 2
 \cdot x^2 \) berechnet. x steht fuer die Schalennummer (s.S. 68).
@@ -128,18 +128,19 @@ Aussen(Valenz)elektronen beschrieben.
 
 Der Unterschied zwischen Metallen und Nichtmetallen ist auf Seite 70 erklaert.
 
-Chemische Vorgaenge spielen sich meist in der Valenzschale ab. Die Wolken
-beschreiben Aufenthaltsorte von Elektronen. Die Schalen haben unterschiedlich
-viele Wolken. Jede Wolke enthaelt max. 2 Elektronen. Wolken gleicher Energie
-werden zuerst alle einfach belegt, bevor die Doppelbelegung beginnt. (s.S. 71)
-Wie dies symbolisch dargestellt wird, ist auf Seite 72 erlaeutert.
+%Chemische Vorgaenge spielen sich meist in der Valenzschale ab. Die Wolken
+%beschreiben Aufenthaltsorte von Elektronen. Die Schalen haben unterschiedlich
+%viele Wolken. Jede Wolke enthaelt max. 2 Elektronen. Wolken gleicher Energie
+%werden zuerst alle einfach belegt, bevor die Doppelbelegung beginnt. (s.S. 71)
+%Wie dies symbolisch dargestellt wird, ist auf Seite 72 erlaeutert.
 
 Innerhalb der Schalen existieren Unterschalen. Bei der Verteilung der Elektronen
 haben diese Vorrang (s.S. 72, unten). In welcher Reihenfolge die Unterschalen
 genau belegt werden, stellt die Abbildung auf Seite 74 dar. Wie die Unterschalen
 im Periodensystem dargestellt werden, ist auf Seite 76 erklaert.
 
-Rumpf, Rumpfladung, Metalle: Seite 76, unten
+Rumpf, Rumpfladung, Metalle: Seite 76, unten. Die Rumpfladung entspricht der
+Hauptgruppe in der sich das Element befindet.
 
 Die Wellenfunktionen s, p, d und f werden auf Seite 87 beschrieben.
 
@@ -181,5 +182,33 @@ Merkmale von Salzen: nur leitf\"ahig wenn gel\"ost, hohe temp, spr\"ode.
 
 Teilchenverh\"altnis anhand von Reaktion ermitteln: Gewicht des Produktes -
 Gewicht Edukt1 = Gewicht Edukt2.
-\(\frac{masse}{\frac{masse}{mol}} = mol \)
+
+\begin{description*}
+  \item[van der Waals-Kr\"afte] Die Elektronenbewegung f\"uhrt dazu das
+  Atome/Molek\"ule kurzzeitig nicht gleichm\"assig geladen sind. Dadurch haben
+  sie einen positiven und einen negativen Pol und ziehen sich kurzzeitig
+  gegenseitig an. Je gr\"ossern ein Molek\"ul, desto gr\"osser die van der Waals
+  Kr\"afte. 
+  \item[Elektronegativit\"at] (Seite 160) Bei gemeinsamen Elektronenwolken
+  werden die Elektronen zu dem Element mit der groesseren Rumpfladung
+  hingezogen. (sind die Atomruempfe in derselben Hauptgruppe, so kann noch die
+  Gr\"osse eine rolle spielen. Hier gilt: kleinerer Rump (oben im
+  Periodensystem) => gr\"ossere Anziehungskraft) Dadurch erhaelt dieses eine
+  leicht negative Ladung \(\delta^-\). Das andere Element erh\"alt eine positive
+  Ladung \(\delta^+\). Siehe auch Tabelle auf Seite 161. Siehe auch Seite 162.
+  \item[Dipol-Dipol Kr\"afte] (Seite 170) H\"angt ab von der
+  Elektronegativit\"at. Sind die Elemente so plaziert, dass ein Plus und ein
+  Minus Pol am Molek\"ul entsteht, so spricht man von einem permanennten Dipol.
+  Dipole ziehen sich an. Zu beachten: Eingeklemmnt in Pyramide! Stab, ... 
+  \item[Wasserstoffbr\"ucken] (Seite 172)
+  \item[Bindungsenthalpie] (Seite 149) Wie viel Energie ist noetig um eine
+  Atombindung zu loesen. Angegeben in in \(\frac{kj}{mol}\)
+  \item[Reaktionsenthalpie \(\Delta H\)] (Seite 151) Differenz von
+  Energieaufwand und Energiegewinn. negativ == Energiegewinn.
+  \item[Aktivierungsenthalpie] (Seite 152) Aktivierungsenergie die n\"otig ist
+  um vorhandene Bindungen zu spalten trennen und damit die Reaktion zu
+  ermoeglichen.
+  \item[Bildungsenthalpie] (Seite 153)
+\end{description*}
+\(C_yH_x\) ist nie ein Dipol!
 \end{document}

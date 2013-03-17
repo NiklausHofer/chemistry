@@ -1,0 +1,221 @@
+\documentclass[11pt,paper=a4,final]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}           %allows us to specify the 'seitenrand'
+\usepackage{graphicx}           %package used to include graphics
+\usepackage{hyperref}           %used to make klickable links
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage[figuresright]{rotating}
+\usepackage{nameref}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{ngerman} % Make the document German
+% Make the document German
+\usepackage{ngerman}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{mdwlist}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{units}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+
+\title{Kupfersulfid herstellen}
+\author{Roland Rytz \and Niklaus Hofer}
+\date{\today{}}
+
+% Make title and author accessible in the header/footer
+\makeatletter
+  \let\Title\@title
+  \let\Author\@author
+\makeatother
+
+\pagestyle{fancy}
+
+%\geometry{a4paper, top=20mm, right=20mm, bottom=20mm, left=20mm}
+
+\fancyhf{}      %delete default values
+\setlength{\headwidth}{\textwidth}      %header and footer width equal the text width
+\lhead{\Author}
+\rhead{\Title}
+\fancyfoot[CE,CO]{Speicherdatum: \today{}}
+\fancyfoot[RE,RO]{\thepage}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\part{Redoxreaktionen: Explosionsbereich}
+\section{Hexan}
+\subsection{Berechnungen}
+Alle Angaben bei \unit[20]{°C}
+\subsection{Hexan}
+Als Fl\"ussigkeit haben wir Hexan gew\"ahlt. Das verwendete Explosionsgef\"ass
+hat ein Volument von \(1L = 1dm^3\). Laut Tabelle ist Hexan z\"undbar
+bei \(35-290 \frac{g}{m^3}\). Das entspricht \(0.035 - 0.290 \frac{g}{dm^3}\).
+
+Um in einem sicheren Bereich zu liegen, haben wir den Mittelwert davon
+gew\"ahlt. Das sind \(0.1625 \frac{g}{dm^3}\).
+Hexan hat eine Dichte \(\rho\) von \(\rho = 0.659 \frac{g}{mL}\). Damit l\"asst
+sich die f\"ur unser Experiment ben\"otigte Menge berechnen:
+\[ \frac{0.1625g}{0.659\frac{g}{mL}} = 0.247mL \]
+
+F\"ur den zweiten Versuch sollte eine Menge gew\"ahlt werden die ca. 50\% \"uber
+dem oberen Explosionswert liegt. 
+\[ \frac{1.5 \cdot 0.290g}{0.659\frac{g}{mL}} = 0.66mL \]
+
+\subsection{Beobachtungen}
+Den ersten Aufbau haben wir gleich nach dem Abf\"ullen des Hexans zu z\"unden
+versucht. Dabei ist nat\"urlich nichts geschehen, da das Hexan zu diesem
+Zeitpunkt noch nicht verdampft war und stattdessen als F\"ussigkeit auf dem
+Grund des Gef\"asses lag. Es war also noch keine explosive oder z\"undbare
+Mischung entstanden. Wir liessen das Hexangemisch deshalb steheh, w\"ahrend wir
+den Versuch mit dem Erdgas vorbereiteten.
+
+Nachdem wir den Versuch mit dem Erdgas vorbereitet hatten, war das Hexan
+verdampft und wir versuchten erneut es zu z\"unden. Zuerst geschah wiederum
+nichts. Uns fiel aber auf, dass es beim Z\"under keinen Funken gab. Wiederholtes
+Versuchen (des Z\"undvorganges) f\"uhrte schlussendlich zum gew\"unschten
+Ergebnis. Der Deckel des Gef\"asses wurde abgehoben und eine Stichflamme stach
+kurz aus dem offenenen Ende des Gef\"asses. Dabei und kurz darauf lief das
+Gef\"ass kurz an um dann wieder durchsichtig zu werden.
+
+Die Menge Hexan die f\"ur den zweiten Versuch verwendet wurde war deutlich
+gr\"osser als die des ersten Versuches. Dadurch dauerte auch das Verdunsten
+l\"anger. Durch das Verteilen der Fl\"ussigkeit am Gef\"assrand konnten wir die
+Oberfl\"ache vergr\"ossern und somit die ben\"otigte Zeit zum Verdunsten
+verringern. Wie erwartet geschah beim Z\"unden des Gemisches nichts. Wir
+entfernten daraufhin den Deckel von dem Gef\"ass und richteten es schr\"ag nach
+unten, so dass das Gas, das schwerer ist als die Luft, entweichen konnten. Dazu
+bet\"atigten wir wiederholt den Z\"undknopf. Nach einigen Versuchen z\"undete
+das Gemisch und es entstand eine Stichflamme die diejenige des ersten Versuches
+in der Gr\"osse deutlich \"ubertraf.
+\subsection{Fehlerabsch\"atzung}
+Abgemessen haben wir das Hexan mit einer Eppendorfpipette.
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|l|l|}\hline
+    \bf Menge	& \bf Ungenauigkeit	& \bf Menge effektiv	\\
+    \hline
+    0.247mL	& \(\pm 1\%\)	&	0.24453 - 0.24947mL	\\
+    \hline
+    0.66mL	& \(\pm 1\%\)	&	0.6534 - 0.666mL	\\
+    \hline
+  \end{tabular}
+  \caption{Fehlerabsch\"atzung bei den Versuchen mit Hexan}
+  \label{tab:}
+\end{table}
+Die Messungenauigkeiten liegen also deutlich innerhalb des Explosionsbereiches
+und k\"onnen deshalb vernachl\"assigt werden.
+
+Ausserdem ist die genaue Zusammensetzung der Luft in dem Gef\"ass unbekannt.
+\section{Erdgas}
+\subsection{Berechnungen}
+Erdgas hat einen Z\"undbereich von 5-15\% des Volumens. Auch hier haben wir
+wieder den Mittelwert, also 10\%, genommen um im sicheren Bereich zu liegen. Das
+Z\"undgef\"ass ist ein Typengleiches wie dasjenige welches wir f\"ur die
+Versuche mit Hexan auch verwendet haben und hat ebenfalls \(1L = 1000mL\)
+Volumen.
+\[ 0.1 \cdot 1000mL = 100mL \]
+
+F\"ur den zweiten Versuch, bei das 1.5 Fache des oberen Wertes des
+Z\"undbereiches gew\"ahlt werden soll sehen die Berechnungen wie folgt aus:
+\[ 1.5 \cdot 25\% = 22.5\% = 0.225 \]
+\[ 0.225 \cdot 1000mL = 225mL \]
+\subsection{Beobachtungen}
+Das Abf\"ullen des Erdgases in das Explosiongef\"ass war nicht ganz einfach und
+wurde dadurch erschwert, dass das Gas nicht sichtbar ist. Da Erdgas eine
+geringere Dichte hat als die Luft und deshalb steigt, mussten wir das Gef\"ass
+mit der \"Offnung nach unten halten und von unten her abf\"ullen. Bei den ersten
+zwei Versuchen entfernten wir den Deckel vollst\"andig und f\"ullten das Gas
+langsam von unten her in das Z\"undgef\"ass. Dabei ist aber ein betrachtlicher
+Teil des Gases entwischt, was dazu gef\"uhrt hat, dass das Experiment
+gescheitert ist.
+
+Wir wurden von der Lehrkraft darauf aufkermsam gemacht, dass wir das Gas
+abf\"ullen sollten, indem wir den Deckel nur am rande leicht anheben und dann
+das Gas einf\"ullen. So l\"asst sich der Deckel gleich nach dem Abf\"ullen
+wieder verschliessen.
+
+Beim dritten Versuch funktionierte es dann auch wie erwartet. Das Z\"undgef\"ass
+war leicht schr\"ag nach oben gerichtet. Der Deckel wurde \glqq abgesprengt\grqq
+und flog ca. zwei Meter weit. Dabei gab es eine deutlich vernehmbare
+Ger\"auschentwicklung.
+
+Bei dem zweiten Versuch, bei dem die deutlich gr\"ossere Menge Erdgas verwendet
+wurde ist erwartungsgem\"ass nicht geschehen beim Z\"unden, obschon beim
+Z\"under deutlich sichtbar Funken entstanden. Wir entfernten anschliessend den
+Deckel und richteten die \"Offnung des Gef\"asses leicht schr\"ag nach oben (da
+das Gas steigt) und dr\"uckten, w\"ahrend das Gas entwich, wiederholt den
+Ausl\"oser. Nach einigen Versuchen entz\"undete sich das Gemisch und es entstand
+eine Stichflamme die diejenige des ersten Vesuches in ihrer Gr\"osse deutlich
+\"ubertraf.
+\subsection{Fehlerabsch\"atzung}
+Das Erdgas haben wir mit einem Kolbenprober abgemessen. Das gestaltete sich
+nicht ganz einfach, da die Zufur schwierig zu regeln war. Alleine dadurch ist
+bereits eine zimlich hohe Arbeitsungenauigkeit von ca. 4\% aufgetreten.
+Gravierender aber noch, ist die Ugenauigkeit die durch das Abf\"ullen entstanden
+ist. Wie bereits in den Beobachtungen erw\"ahnt hat das unvorsichtige Vorgehen
+in einem Falle selsbt zum Scheitern des Versuches gef\"uhrt. Wir gehen hier
+f\"ur die gegl\"uckten Experimente von einer Arbeitsungenauigkeit von ca. 10\%
+aus.
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|l|l|}\hline
+    \bf Volumen in \%	& \bf Ungenauigkeit	& \bf Volumen in \% effektiv \\
+    \hline
+    10			& \(\pm 10\%\)		& 9.9 - 10.1 \\
+    \hline
+    22.5		& \(\pm 10\%\)		& 22.275 - 22.725 \\
+    \hline
+  \end{tabular}
+  \caption{Fehlerabsch\"atzung bei den Versuchen mit Erdgas}
+  \label{tab:}
+\end{table}
+Auch hier liegt also die Ungenauigkeit deutlich innerhalb des Z\"undbereiches
+und kann deshalb vernachl\"assigt werden.
+
+Ausserdem ist die genaue Zusammensetzung der Luft in dem Gef\"ass unbekannt.
+
+\section{Interpretation}
+\subsection{Hexan}
+Beim ersten Z\"undversuch, als das Hexan noch nicht verdampft war, hatte das
+Gemisch die zur Z\"undung ben\"otigte Menge an Hexan in Gasform noch nicht
+erreicht gehab. Erst als alles Hexan verdampft war, lag es innerhalb des
+Z\"undbereiches.
+
+Mit derm 1.5 Fachen Menge des oberen Randes des Z\"undbereiches war das Gemisch
+wiederum in einem Zustand in dem keine Z\"undung statt finden konnte. Diesmal
+allerdings nicht mangels Hexan, sondern mangels Sauerstoff. Nach dem Entfernen
+des Deckels ist zunehmend Hexan entwichen und durch Sauerstoffhaltige Luft
+ersetzt worden bis eine Z\"undung m\"oglich wurde.
+\subsection{Erdgas}
+Bei den ersten beiden Versuchen ist durch unser ungeschicktes Vorgehen beim
+Abf\"ullen des Gases in das Z\"undgef\"ass zu viel Gas entwichen und es ist
+keine z\"undbare Mischung entstanden da zu wenig Gas vorhanden war. Nachdem wir
+das Gas vorsichtiger abgef\"ullt hatten, konnten nun eine Z\"undung stattfinden,
+da die ben\"otigten Verh\"altnisse gegeben waren.
+
+Mit der 1.5 Fachen Menge oberhalb des oberen Z\"undbereiches konnte das Gemisch
+nicht gez\"undet werden, da zu wenig Sauerstoff vorhanden war. Als der Deckel
+entfernt war, entwich immer mehr Gas und wurde durch sauerstoffhaltige Luft
+ersetzt, solange bis ein z\"undbares Gemisch vorhanden war.
+
+
+\newpage
+\listoftables
+\bibliography{cus.bib}{}
+\bibliographystyle{plain}
+\end{document}
+
