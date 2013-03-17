@@ -1,0 +1,80 @@
+\documentclass[11pt,paper=a4,final]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}           %allows us to specify the 'seitenrand'
+\usepackage{graphicx}           %package used to include graphics
+\usepackage{hyperref}           %used to make klickable links
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage[figuresright]{rotating}
+\usepackage{nameref}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{ngerman} % Make the document German
+% Make the document German
+\usepackage{ngerman}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{mdwlist}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{units}
+\usepackage{chemfig}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\makeatletter
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\title{Redoxreaktionen: Batterie (Daniell-Element)}
+\author{Roland Rytz \and Niklaus Hofer}
+\date{\today{}}
+
+% Make title and author accessible in the header/footer
+\makeatletter
+  \let\Title\@title
+  \let\Author\@author
+\makeatother
+
+\pagestyle{fancy}
+
+%\geometry{a4paper, top=20mm, right=20mm, bottom=20mm, left=20mm}
+
+\fancyhf{}      %delete default values
+\setlength{\headwidth}{\textwidth}      %header and footer width equal the text width
+\lhead{\Author}
+\rhead{\Title}
+\fancyfoot[CE,CO]{Speicherdatum: \today{}}
+\fancyfoot[RE,RO]{\thepage}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\section{Unterzeichnet}
+Bern, \today
+
+\vspace{0.5cm}
+\noindent
+Niklaus Hofer\hfill Roland Rytz
+
+\vspace{2cm}
+\noindent
+\hrulefill \hfill \hrulefill
+
+\newpage
+\listoftables
+\listoffigures
+\bibliography{cus.bib}{}
+\bibliographystyle{plain}
+\end{document}
+
