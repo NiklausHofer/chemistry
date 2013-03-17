@@ -31,8 +31,11 @@
     urlcolor=black
 }
 
+\makeatletter
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
 
-\title{Kupfersulfid herstellen}
+\title{Redoxreaktionen: Explosionsbereich}
 \author{Roland Rytz \and Niklaus Hofer}
 \date{\today{}}
 
@@ -57,7 +60,6 @@
 \maketitle
 \newpage
 \tableofcontents
-\part{Redoxreaktionen: Explosionsbereich}
 \section{Hexan}
 \subsection{Berechnungen}
 Alle Angaben bei \unit[20]{°C}
@@ -218,30 +220,83 @@ ersetzt, solange bis ein z\"undbares Gemisch vorhanden war.
 \subsection{Verbrennungsreaktion am Beispiel von Hexan}
 \[zC_6H_{14} + nO_2 \to xCO_2 + yH_2O \]
 \[2C_6H_{14} + 19O_2 \to 12CO_2 + 14H_2O \]
+% UGLY HACK!!!
+\newpage
 \subsection{Oxidationszahlen}
-%\chemfig{C(-[:0]H)(-[:90]H)(-[:180]H)(-[:270]H)}
 \begin{figure}[h!]
   \centering
-  \definesubmol{x1}{C^{-II}(-[:90]H^{+1})(-[:270]H^{+I})}
-  \chemfig{C^{-III}(-[:90]H^{+I})(-[:180]H^{+I})(-[:270]H^{+I})-!{x1}-!{x1}-!{x1}-!{x1}-C^{-III}(-[:0]H^{+I})(-[:90]H^{+I})(-[:270]H^{+I})}
+  \definesubmol{x1}{C^{-II}(-[:90]H^{I})(-[:270]H^{I})}
+  \chemfig{C^{-III}(-[:90]H^{I})(-[:180]H^{I})(-[:270]H^{I})-!{x1}-!{x1}-!{x1}-!{x1}-C^{-III}(-[:0]H^{I})(-[:90]H^{I})(-[:270]H^{I})}
   %\chemfig{C(-[:o]H)(-[:90]H)(-[:270]H)(-[:180]C)}
-  \caption{Oxidationszahlen von Hexan}
+  \caption{Oxidationszahlen von Hexan (\(C_6H_{14}\))}
   \label{fig:}
 \end{figure}
-
-Da die Zusammensetzung des verwendeten Erdgases nicht genau bekannt ist,
-verwende ich hier den Hauptbestandteil Methan \(CH_4\).
 \begin{figure}[h!]
   \centering
-  \chemfig{C^{-IV}(-[:90]H^{+I})(-[:180]H^{+I})(-[:270]H^{+I})(-[:0]H^{+I})}
-  \caption{}
+  \chemfig{\lewis{35,O}^0=\lewis{17,O}^0}
+  \caption{Oxidationszahlen von Sauerstoff (\(O_2\))}
   \label{fig:}
 \end{figure}
+\begin{figure}[h!]
+  \centering
+  \chemfig{\lewis{35,O}^{-II}=C^{IV}=\lewis{17,O}^{-II}}
+  \caption{Oxidationszahlen von Kohlenstoffdioxid (\(CO_2\))}
+  \label{fig:}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \chemfig{\lewis{24,O}^{-II}(-[:0]H^{I})(-[:270]H^{I})}
+  \caption{Oxidationszahlen von Wasser (\(H_2O\))}
+  \label{fig:}
+\end{figure}
+\subsection{Reduktion und Oxidation}
+\(O^0 \to O^{-II} \) Reduktion (Zufuhr von 2 Ekeltronen) \\
+\(C^{-II} \to C^{IV} \) Oxidation (Entzug von 6 Elektronen) \\
+\(C^{-III} \to C^{IV} \) Oxidation (Entzug von 7 Elektronen) \\
+\(H^I \to H^I \) Keine Ver\"anderung
+\subsection{Redoxreaktion}
+Oxidation 1: \( \color{red}2\color{black}C^{-\Rmnum{3}} -
+\color{red}2\color{black}\cdot7e \to \color{red}2\color{black}C^{IV} \)\\
+Oxidation 2: \( \color{red}4\color{black}C^{-\Rmnum{2}} -
+\color{red}4\color{black}\cdot 6e \to \color{red}4\color{black}C^{\Rmnum{4} }
+\)\\
+Reduktion : \( \color{red}19\color{black}O^0 + \color{red}19\color{black}\cdot
+2e \to \color{red}19\color{black}O^{-\Rmnum{2}} \)\\
+Ausserdem : \( \color{red}14\color{black}H^I \to \color{red}14\color{black}H^I \)
+\\
+Redoxreaktion : \( 2C^{-III} + 4C^{-II} + 19O^0 + 14H^I \to 6C^{IV} + 19O^{-II}
++ 14H^I \)\\
+Korrektur : \(\color{red}2\color{black}C_6H_{14} + \color{red}19\color{black}O_2
+\to \color{red}12\color{black}CO_2 + \color{red}14\color{black}H_2O \)
+\section{Berechnung der optimalen Menge}
+Annahme: Die Luft in dem Gef\"ass besteht zu 100\% aus reinem Sauerstoff
+(\(O_2\)). Ausserdem herrschen Normbedingungen.
 
+1Mol Gas entspricht 22.4L. Das Gef\"ass hat also ein Volument von
+\(\frac{1}{22.4}\) Mol. Die Anzahl Teilchen pro Mol ist festgelegt. In der
+Verbrennungsgleichung sind 38 Sauerstoff (O) Teilchen, 12 Kohlenstoff (C)
+Teilchen und 28 Wasserstoff (H) Teilchen enthalten.
+Zusammen erhalten wir: \( 38 + 28 + 12 = 78 \) Teilchen.
 
+Menge Sauerstoff: \( \frac{38}{78} \cdot \frac{1}{22.4} = 0.021749\) Mol \\
+Menge Hexan:	  \( \frac{40}{78} \cdot \frac{1}{22.4} = 0.022894\) Mol
+
+1 Mol Hexan l\"asst sich ermitteln durch Molzahlen von Kohlenstoff und
+Wasserstoff: \(6 \cdot 12.011 + 14 \cdot 1.0079 = 86.1766 \frac{g}{mol} \)
+
+\[ 0.022894 mol \cdot 86.1766\frac{g}{mol} = 1.97291g \]
+\[ \frac{1.97291g}{0.659\frac{g}{mL}} = 2.99379mL \]
+
+Die optimale Menge Hexan gem\"ass Verbrennungsgleichung w\"are demzufolge
+2.99379mL.
+
+Dieser Wert weicht nat\"urlich deutlich vom realen Wert ab, da die Luft nicht
+nur aus Sauerstoff besteht, und die Raumtemperatur wiederholt nicht
+ber\"ucksichtigt worden ist.
 
 \newpage
 \listoftables
+\listoffigures
 \bibliography{cus.bib}{}
 \bibliographystyle{plain}
 \end{document}

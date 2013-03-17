@@ -1,13 +1,16 @@
-\contentsline {part}{\numberline {I}Redoxreaktionen: Explosionsbereich}{2}{part.1}
 \contentsline {section}{\numberline {1}Hexan}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Berechnungen}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Hexan}{2}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Beobachtungen}{3}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Fehlerabsch\"atzung}{3}{subsection.1.4}
-\contentsline {section}{\numberline {2}Erdgas}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Berechnungen}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {1.2}Beobachtungen}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Fehlerabsch\"atzung}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Interpretation}{3}{subsection.1.4}
+\contentsline {section}{\numberline {2}Erdgas}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Berechnungen}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Beobachtungen}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Fehlerabsch\"atzung}{4}{subsection.2.3}
-\contentsline {section}{\numberline {3}Interpretation}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Hexan}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Erdgas}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {2.3}Fehlerabsch\"atzung}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Interpretation}{5}{subsection.2.4}
+\contentsline {section}{\numberline {3}Chemischer Hintergrund}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Verbrennungsreaktion am Beispiel von Hexan}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Oxidationszahlen}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Reduktion und Oxidation}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Redoxreaktion}{6}{subsection.3.4}
+\contentsline {section}{\numberline {4}Berechnung der optimalen Menge}{7}{section.4}
