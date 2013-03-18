@@ -56,13 +56,135 @@
 \fancyfoot[CE,CO]{Speicherdatum: \today{}}
 \fancyfoot[RE,RO]{\thepage}
 
+
 \begin{document}
 \maketitle
 \newpage
 \tableofcontents
-\section{Unterzeichnet}
-Bern, \today
+\section{Messwerte}
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|l|l|}\hline
+    \bf Messung		& \bf Strom (I)	& \bf Spannung (U)	\\
+    \hline
+    5cm			& -		& 1.07V	\\
+    \hline
+    Voll		& -		& 1.08V \\
+    \hline
+    Motor		& 0.001A / 0.013A	& 0.98V / 0.40V \\
+    \hline
+    Lampe		& 0A		& 1.09V \\
+    \hline
+    \(5 \Omega\) Widerstand & 0.019A	& 0.17V \\
+    \hline
+    \(100 \Omega\) Widerstand & 0.006A	& 0.77V \\
+    \hline
+  \end{tabular}
+  \caption{Messwerte}
+  \label{tab:}
+\end{table}
+\section{Beobachtungen}
+Wie im Aufbau beschrieben haben wir die beiden Beh\"alter zuerst bis auf eine
+H\"ohe von ca. 5cm aufgef\"ullt. Die Messung an diesem Punkt ergab einen Wert
+f\"ur die Spannung von \(U = 1.07V\). W\"ahrend des Nachf\"ullens der Elemente
+haben wir das Messger\"at angeschlossen gelassen, dabei ist der Wert um
+lediglich 0.1 Volt gestiegen. Beim aktivieren des Motors hat dieser nicht zu
+drehen begonnen, ebenso hat die Lampe beim Zuschalten nicht geleuchtet. Aus
+diesem Grund haben wir das Messger\"at ausgetauscht. Beim zweiten Messger\"at
+sind dieselben St\"orungen aufgetreten. Ausserdem hat das zweite Messger\"at
+Werte angezeigt die von denen des ersten Ger\"ates sehr verschieden waren. Dies
+ist deutlich zu erkennen in den beim Motor angegebenen Werten.
+\section{Fehlerabsch\"atzung}
+Leider ist mir die Messtoleranz des verwendeten Messger\"ates nicht bekannt. Das
+Ger\"at ist mit \glqq heliocentris DBGM Nr. 299.12.681.1\grqq beschriftet. Die
+beim Wechsel des Messger\"ates festgestellte Ungenauigkeit betr\"agt aber \"uber
+100\%! Jegliche andere Ungenauigkeit kann also getrost vernachl\"assigt werden.
+\[\frac{100}{0.4} \cdot 0.98 -100 = 245 -100 = 145\]
+Ich gehe also von einer Messungenauigkeit von \(\pm 145\%\) aus. Im negativen
+Bereich heisst das, dass die Werte jeweils auch bei 0 liegen k\"onnten. Deshalb
+enth\"alt die untere Tabelle in der hintersten Spalte jeweils den oberen
+m\"oglichen Wert.
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|l|l|l|l|}\hline
+    \bf Messung		& \bf I	& \bf I (Ungenauigkeit) &\bf U & \bf U (Ungenauigkeit)	\\
+    \hline
+    5cm			& -		& - & 1.07V & 2.62	\\
+    \hline
+    Voll		& -& -		& 1.08V & 2.65\\
+    \hline
+    Motor		& 0.001A &  0.013A	& 0.40V & 0.98V \\
+    \hline
+    Lampe		& 0A	 & 0A       & 1.09V & 2.67\\
+    \hline
+    \(5 \Omega\) Widerstand & 0.019A& 0.0466A	& 0.17V  &0.417V\\
+    \hline
+    \(100 \Omega\) Widerstand & 0.006A	& 0.0147A& 0.77V & 1.887V\\
+    \hline
+  \end{tabular}
+  \caption{Fehlerabsch\"atzung}
+  \label{tab:}
+\end{table}
+Da Messwerte mit einer derart hohen Ungenauigkeit genau so gut als ung\"ultig
+erkl\"art werden k\"onnen, werden wir die Ungenauigkeit im weiteren Verlauf des
+Dokumentes nicht mehr beachten.
+\section{Theoriewerte}
+Die Reaktion findet statt zwischen dem Zink (Zn) und dem Kupfer (Cu). Gem\"ass
+der Tabelle haben diese einen Wert von -0.76V (Zn) und +0.35V (Cu). Zusammen
+gibt das einen theoretischen Spannungswert von 1.11V.
 
+Verglichen mit dem h\"oheren unserer beiden Messwerte, 0.98V, ist die Abweichung
+zimlich gering. Diese Abweichung kann verschieden Ursachen haben. Die
+wahrscheinlichste ist in diesem Falle wohl die Ungenauigkeit des Messger\"ates.
+Hinzu kommt aber noch der Umstand, dass der theoretische Wert von 1.11V nur bei
+Normbedingungen gegeben ist, die im Labor nicht geherscht haben. Es ist
+ausserdem auch vorstellbar, dass die verwendeten Metalle eine begrenzte
+Leitf\"ahigkeit aufweisen und dadurch das Ergebnis weiter beeintr\"achtigen.
+Bern, \today
+\section{Widerstand}
+Die Formel zum Berechnen des Widerstandes lautet\cite{wiki:ohm}
+\[R = \frac{U}{I} \]
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|l|l|l|}\hline
+    \bf Messung		& \bf Strom (I)	& \bf Spannung (U) & \bf Widerstand (R)     \\
+    \hline
+    Motor		& 0.001A	& 0.98V		& \(980 \Omega\)\\
+    \hline
+    Lampe		& 0A		& 1.09V 	& - \\
+    \hline
+    \(5 \Omega\) Widerstand & 0.019A	& 0.17V 	& \(8.95 \Omega\) \\
+    \hline
+    \(100 \Omega\) Widerstand & 0.006A	& 0.77V 	& \(127.3 \Omega \)\\
+    \hline
+  \end{tabular}
+  \caption{Widerstandswerte}
+  \label{tab:}
+\end{table}
+
+Die Tabelle zeigt, dass der Motor einen sehr hohen Widerstand hat. Das ist gut
+vorstellbar, da er ja auch tats\"achlich eine Arbeit verrichtet. Sie zeigt aber
+auch, dass die Messwerte einen vom theoretischen Wert (des Messger\"ates)
+abweichenden Wert ergeben. Die Werte f\"ur den \(5 \Omega\) und den \(100
+\Omega\) Widerstand weichen deutlich ab. Auch hier k\"onnte der Eigenwiderstand
+der Metalle eine Rolle spielen.
+
+Mit dem wechselnden Widerstand lassen sich auch die Schwankungen in der Spannung
+und Stromst\"arke erkl\"aren. Gem\"ass dem Ohmschen Gesetz m\"ussen die Werte
+zusammenhangen. Wenn einer sich \"andert so muss das Auswirkungen auf einen oder
+beide der anderen Werte haben.
+\section{Interpretation des steigenden Widerstandes}
+Beim Nachf\"ullen der Sulfate ist der gemessenen Widerstand um 0.01 Volt
+gestiegen. Die Ursache f\"ur dieses Verhalten ist m\"oglicherweise, dass mit
+zunehmendem Pegelstand der Fl\"ussigkeiten die Ber\"uhrungsfl\"ache mit dem
+Metall steigt und dadurch mehr Elektronen simultan durch den Leiter wandern.
+\section{Redoxgleichung}
+Im Daniell-Element l\"auft folgende Reaktion ab:\\
+Reduktion : \(Zn \to Zn^{\Rmnum{2}} + 2e^{-} \)\\
+Oxidation: \(Cu^{\Rmnum{2}} + 2e^{-} \to Cu^0 \)\\
+Redoxreaktion : \(Zn + Cu^{\Rmnum{2}} \to Zn^{\Rmnum{2}} +  Cu^0 \)\\
+
+\section{Unterzeichnet}
 \vspace{0.5cm}
 \noindent
 Niklaus Hofer\hfill Roland Rytz
@@ -74,7 +196,7 @@ Niklaus Hofer\hfill Roland Rytz
 \newpage
 \listoftables
 \listoffigures
-\bibliography{cus.bib}{}
+\bibliography{battery.bib}{}
 \bibliographystyle{plain}
 \end{document}
 

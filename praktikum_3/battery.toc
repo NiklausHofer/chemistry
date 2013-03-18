@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Messwerte}{2}{section.1}
+\contentsline {section}{\numberline {2}Beobachtungen}{2}{section.2}
+\contentsline {section}{\numberline {3}Fehlerabsch\"atzung}{3}{section.3}
+\contentsline {section}{\numberline {4}Theoriewerte}{3}{section.4}
+\contentsline {section}{\numberline {5}Widerstand}{3}{section.5}
+\contentsline {section}{\numberline {6}Interpretation des steigenden Widerstandes}{4}{section.6}
+\contentsline {section}{\numberline {7}Redoxgleichung}{4}{section.7}
+\contentsline {section}{\numberline {8}Unterzeichnet}{4}{section.8}
